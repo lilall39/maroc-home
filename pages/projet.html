@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet – Assia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/variables.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/projet.css">
+</head>
+<body class="page">
+  <header class="site-header light" id="site-header">
+    <a href="../index.html" class="logo">Assia</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="../index.html" class="nav-link">Accueil</a></li>
+        <li><a href="projets.html" class="nav-link">Projets</a></li>
+        <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Image principale (remplie par JS) -->
+    <section class="projet-hero">
+      <img id="projet-main-image" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80" alt="Projet" width="1600" height="900">
+    </section>
+
+    <!-- Galerie (remplie par JS) -->
+    <section class="projet-gallery" id="projet-gallery"></section>
+
+    <!-- Description + encart meta -->
+    <section class="projet-content">
+      <div class="projet-content-inner">
+        <div class="projet-description">
+          <h2 id="projet-title">Projet</h2>
+          <div id="projet-description">
+            <p>Chargement…</p>
+          </div>
+        </div>
+        <aside class="projet-meta">
+          <dl>
+            <dt>Type de projet</dt>
+            <dd id="projet-type">—</dd>
+            <dt>Lieu</dt>
+            <dd id="projet-lieu">—</dd>
+            <dt>Année</dt>
+            <dd id="projet-annee">—</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Projet suivant -->
+    <section class="projet-next">
+      <p class="label">Projet suivant</p>
+      <a href="#" id="projet-next-link" class="btn btn-outline">Voir le projet</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <a href="../index.html" class="footer-link">Accueil</a>
+        <a href="projets.html" class="footer-link">Projets</a>
+        <a href="a-propos.html" class="footer-link">À propos</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:contact@agence-assia.fr">contact@agence-assia.fr</a><br>
+        Paris, France
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/projet-data.js"></script>
+  <script src="../scripts/projet.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

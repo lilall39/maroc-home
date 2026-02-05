@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assia – Agence d'architecture & aménagement intérieur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body class="page page-home">
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="logo">Assia</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="pages/projets.html" class="nav-link">Projets</a></li>
+        <li><a href="pages/a-propos.html" class="nav-link">À propos</a></li>
+        <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero plein écran -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <img
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+        alt=""
+        class="hero-bg-img"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+      >
+      <div class="hero-inner">
+        <h1 class="hero-title">L’espace réinventé</h1>
+        <p class="hero-tagline">Conception et réalisation de projets d’aménagement intérieur sur mesure.</p>
+      </div>
+    </section>
+
+    <!-- Ce que nous faisons -->
+    <section class="section what-we-do reveal">
+      <div class="section-inner">
+        <h2 class="section-title">Ce que nous faisons</h2>
+        <p>Nous concevons et réalisons des espaces de vie uniques, de la conception à la livraison. Cuisines, salles de bain, aménagements sur mesure : une approche exigeante au service de votre projet.</p>
+      </div>
+    </section>
+
+    <!-- Projets (vignettes) -->
+    <section class="section home-projects">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Projets</h2>
+        <div class="home-projects-grid">
+          <a href="pages/projet.html?id=1" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Projet Cuisine Moderne" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Cuisine Moderne</span>
+              <span class="card-category">Cuisine</span>
+            </div>
+          </a>
+          <a href="pages/projet.html?id=2" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Projet Salle de bain" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Salle de bain Pierre & Bois</span>
+              <span class="card-category">Salle de bain</span>
+            </div>
+          </a>
+          <a href="pages/projet.html?id=3" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Projet Salon" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Salon Lumineux</span>
+              <span class="card-category">Aménagement sur mesure</span>
+            </div>
+          </a>
+          <a href="pages/projet.html?id=4" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" alt="Projet Bureau" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Bureau Minimaliste</span>
+              <span class="card-category">Moderne</span>
+            </div>
+          </a>
+          <a href="pages/projet.html?id=5" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80" alt="Projet Appartement" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Appartement Paris 16e</span>
+              <span class="card-category">Traditionnel</span>
+            </div>
+          </a>
+          <a href="pages/projet.html?id=6" class="home-project-card reveal">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Projet Villa" loading="lazy" width="800" height="600">
+            <div class="card-overlay">
+              <span class="card-title">Villa Côte d’Azur</span>
+              <span class="card-category">Futuriste</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Méthode / Approche -->
+    <section class="section approach reveal">
+      <div class="section-inner">
+        <h2 class="section-title">Notre approche</h2>
+        <p>Une méthode rigoureuse pour des livraisons à la hauteur de vos attentes.</p>
+        <div class="approach-grid">
+          <div class="approach-item">
+            <h3>Coordination</h3>
+            <p>Pilotage de l’ensemble des corps de métier et suivi du chantier de A à Z.</p>
+          </div>
+          <div class="approach-item">
+            <h3>Délais</h3>
+            <p>Planning respecté et points d’étape réguliers pour une livraison dans les temps.</p>
+          </div>
+          <div class="approach-item">
+            <h3>Qualité</h3>
+            <p>Exigence sur les matériaux et la finition pour un rendu durable et soigné.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Contact -->
+    <section class="cta-section reveal">
+      <div class="section-inner">
+        <h2 class="section-title">Parlez-nous de votre projet</h2>
+        <p>Nous sommes à l’écoute pour en discuter.</p>
+        <a href="pages/contact.html" class="btn btn-primary">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <a href="index.html" class="footer-link">Accueil</a>
+        <a href="pages/projets.html" class="footer-link">Projets</a>
+        <a href="pages/a-propos.html" class="footer-link">À propos</a>
+        <a href="pages/contact.html" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:contact@agence-assia.fr">contact@agence-assia.fr</a><br>
+        Paris, France
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

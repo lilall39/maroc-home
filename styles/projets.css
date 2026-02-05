@@ -1,0 +1,124 @@
+/* ============================================
+   Projets – Grille portfolio et filtres
+   ============================================ */
+
+.page-header {
+  padding: calc(var(--header-height) + var(--space-3xl)) var(--section-padding-x) var(--space-2xl);
+  text-align: center;
+}
+
+.page-header .page-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 500;
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+}
+
+.page-header .page-subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+}
+
+/* ---------- Filtres ---------- */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: 0 var(--section-padding-x) var(--space-xl);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.filters .filter-btn {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray-500);
+  transition: color var(--transition-fast);
+}
+
+.filters .filter-btn:hover,
+.filters .filter-btn.active {
+  color: var(--color-black);
+}
+
+/* ---------- Grille projets ---------- */
+.projects-section {
+  padding: var(--space-2xl) var(--section-padding-x) var(--section-padding-y);
+}
+
+.projects-grid {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (min-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--color-gray-200);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-card .card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-lg);
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.project-card:hover .card-content {
+  opacity: 1;
+}
+
+.project-card .card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.project-card .card-category {
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-wide);
+  color: rgba(255,255,255,0.85);
+}
+
+/* Masquer les cartes filtrées */
+.project-card.hidden {
+  display: none;
+}

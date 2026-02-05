@@ -1,0 +1,106 @@
+/* ============================================
+   Contact – Formulaire et coordonnées
+   ============================================ */
+
+.contact-header {
+  padding: calc(var(--header-height) + var(--space-3xl)) var(--section-padding-x) var(--space-2xl);
+  text-align: center;
+}
+
+.contact-header .page-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 500;
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-header .page-subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+}
+
+/* ---------- Layout formulaire + infos ---------- */
+.contact-section {
+  padding: var(--space-2xl) var(--section-padding-x) var(--space-3xl);
+}
+
+.contact-inner {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Formulaire ---------- */
+.contact-form .form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.contact-form label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--space-xs);
+  color: var(--color-gray-600);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1px solid var(--color-gray-200);
+  background: var(--color-white);
+  color: var(--color-black);
+  transition: border-color var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-gray-500);
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  margin-top: var(--space-sm);
+}
+
+/* ---------- Coordonnées ---------- */
+.contact-info {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-gray-600);
+}
+
+.contact-info h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-black);
+  margin-bottom: var(--space-md);
+}
+
+.contact-info p {
+  margin: 0 0 var(--space-sm);
+}
+
+.contact-info a {
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+.contact-info a:hover {
+  color: var(--color-black);
+}

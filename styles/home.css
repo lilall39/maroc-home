@@ -1,0 +1,183 @@
+/* ============================================
+   Home – Page d'accueil
+   ============================================ */
+
+/* ---------- Hero plein écran ---------- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gray-700) center / cover no-repeat;
+  color: var(--color-white);
+}
+
+.hero .hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.hero .hero-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: var(--section-padding-x);
+  max-width: var(--max-width-narrow);
+}
+
+.hero .hero-title {
+  font-size: var(--font-size-hero);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-md);
+  line-height: var(--line-height-tight);
+}
+
+.hero .hero-tagline {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* ---------- Section Ce que nous faisons ---------- */
+.what-we-do {
+  background: var(--color-white);
+}
+
+.what-we-do .section-inner {
+  max-width: var(--max-width-narrow);
+  text-align: center;
+}
+
+.what-we-do .section-title {
+  margin-bottom: var(--space-md);
+}
+
+.what-we-do p {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-gray-500);
+}
+
+/* ---------- Section Projets (vignettes) ---------- */
+.home-projects {
+  background: var(--color-ivory);
+}
+
+.home-projects .section-title {
+  margin-bottom: var(--space-xl);
+}
+
+.home-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-lg);
+}
+
+.home-project-card {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--color-gray-200);
+}
+
+.home-project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.home-project-card:hover img {
+  transform: scale(1.05);
+}
+
+.home-project-card .card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-lg);
+  opacity: 1;
+  transition: opacity var(--transition-base);
+}
+
+.home-project-card .card-title {
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.home-project-card .card-category {
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-wide);
+  color: rgba(255,255,255,0.8);
+}
+
+/* ---------- Section Méthode / Approche ---------- */
+.approach {
+  background: var(--color-white);
+}
+
+.approach .section-inner {
+  max-width: var(--max-width-narrow);
+  text-align: center;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.approach-item h3 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--space-sm);
+  color: var(--color-black);
+}
+
+.approach-item p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+/* ---------- CTA Contact ---------- */
+.cta-section {
+  padding: var(--space-3xl) var(--section-padding-x);
+  text-align: center;
+  background: var(--color-ivory);
+}
+
+.cta-section .section-title {
+  margin-bottom: var(--space-lg);
+}
+
+.cta-section .btn {
+  margin-top: var(--space-sm);
+}
