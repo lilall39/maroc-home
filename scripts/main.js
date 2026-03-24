@@ -20,10 +20,10 @@
     });
   }
 
-  /* ---------- Header : transparent → fond #EDEBE7 après 50px de scroll ---------- */
+  /* ---------- Header : transparent → fond #FFFFFF après 50px de scroll ---------- */
   var header = document.getElementById("site-header");
   if (header) {
-    var scrolledHeaderBg = "#EDEBE7";
+    var scrolledHeaderBg = "#FFFFFF";
 
     function updateHeader() {
       if (window.scrollY > 50) {

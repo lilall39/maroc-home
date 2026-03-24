@@ -63,15 +63,15 @@ body.page-home {
 
 /* Après scroll (> 50px) : fond lisible */
 .site-header.header-scrolled {
-  background-color: #EDEBE7 !important;
+  background-color: #FFFFFF !important;
   color: var(--color-black);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 /* Garde-fou anti-surcharge (extensions/theme navigateur) */
 header#site-header.site-header.header-scrolled {
-  background: #EDEBE7 !important;
-  background-color: #EDEBE7 !important;
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
 }
 
 /* Logo : aucun fond, ombre ni effet — image posée directement sur le header */
@@ -196,6 +196,7 @@ header#site-header.site-header.header-scrolled {
 }
 
 .page-home .site-header.header-scrolled .nav-toggle {
+  color: var(--color-black);
   filter: none;
 }
 
@@ -249,7 +250,7 @@ header#site-header.site-header.header-scrolled {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EDEBE7;
+    background: #FFFFFF;
     flex-direction: column;
     align-items: center;
     justify-content: center;

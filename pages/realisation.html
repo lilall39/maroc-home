@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Maroc Home</title>
+  <title>Projet – Maroc Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/variables.css">
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="../styles/projet.css">
 </head>
 <body class="page">
   <header class="site-header header-transparent" id="site-header">
@@ -32,37 +32,40 @@
   </header>
 
   <main class="main">
-    <header class="contact-header">
-      <h1 class="page-title">Contact</h1>
-      <p class="page-subtitle">Parlez-nous de votre projet. Nous vous recontactons sous 48 h.</p>
-    </header>
+    <!-- Hero texte -->
+    <section class="projet-hero">
+      <h1 class="projet-hero-title">SÉLECTION DE PROJETS RÉALISÉS</h1>
+    </section>
 
-    <section class="contact-section">
-      <div class="contact-inner">
-        <form class="contact-form reveal" id="contact-form" action="#" method="post">
-          <div class="form-group">
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" required placeholder="Votre nom">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="votre@email.fr">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Décrivez votre projet en quelques mots…"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+    <!-- Galerie (remplie par JS) -->
+    <section class="projet-gallery" id="projet-gallery"></section>
 
-        <div class="contact-info reveal">
-          <h3>Coordonnées</h3>
-          <p>
-            <a href="mailto:contact@agence-assia.fr">contact@agence-assia.fr</a>
-          </p>
-          <p>Paris, France</p>
+    <!-- Description + encart meta -->
+    <section class="projet-content">
+      <div class="projet-content-inner">
+        <div class="projet-description">
+          <h2 id="projet-title">Projet</h2>
+          <div id="projet-description">
+            <p>Chargement…</p>
+          </div>
         </div>
+        <aside class="projet-meta">
+          <dl>
+            <dt>Type de projet</dt>
+            <dd id="projet-type">—</dd>
+            <dt>Lieu</dt>
+            <dd id="projet-lieu">—</dd>
+            <dt>Année</dt>
+            <dd id="projet-annee">—</dd>
+          </dl>
+        </aside>
       </div>
+    </section>
+
+    <!-- Projet suivant -->
+    <section class="projet-next">
+      <p class="label">Projet suivant</p>
+      <a href="#" id="projet-next-link" class="btn btn-outline">Voir le projet</a>
     </section>
   </main>
 
@@ -81,7 +84,8 @@
     </div>
   </footer>
 
+  <script src="../scripts/projet-data.js"></script>
+  <script src="../scripts/projet.js"></script>
   <script src="../scripts/main.js"></script>
-  <script src="../scripts/contact.js"></script>
 </body>
 </html>

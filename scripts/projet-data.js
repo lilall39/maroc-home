@@ -11,9 +11,15 @@ const PROJETS_DATA = [
     lieu: "Paris 11e",
     annee: "2024",
     description: "Réhabilitation complète d’une cuisine dans un immeuble haussmannien. Nous avons conçu un espace de travail fluide avec des matériaux nobles : plan de travail en pierre, meubles sur mesure en chêne massif et électroménager intégré. L’îlot central devient le cœur de la pièce, entre préparation et convivialité.",
-    mainImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80",
+    mainImage: "../assets/images/projet-1-hero.png",
     gallery: [
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80",
+      "../assets/images/realisation-1-carte.png",
+      {
+        type: "text",
+        content: "Avis du client",
+        image: "../assets/images/projet-1-avis-client.png",
+        revealOnImageClick: 0
+      },
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
       "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",

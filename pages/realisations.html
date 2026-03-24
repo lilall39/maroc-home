@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations – Maroc Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/variables.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/projets.css">
+</head>
+<body class="page">
+  <header class="site-header header-transparent" id="site-header">
+    <a href="../index.html" class="logo">
+      <img class="logo-main" src="../assets/images/logo-maroc-home-transparent.png" alt="Maroc Home" width="140" height="38">
+      <img class="logo-home" src="../assets/images/logo-maroc-home-transparent.png" alt="" width="140" height="38" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="../index.html" class="nav-link">Accueil</a></li>
+        <li><a href="realisations.html" class="nav-link">RÉALISATIONS</a></li>
+        <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <header class="page-header">
+      <h1 class="page-title">Réalisations</h1>
+      <p class="page-subtitle">SÉLECTION DE PROJETS RÉALISÉS</p>
+    </header>
+
+    <!-- Filtres -->
+    <div class="filters">
+      <button type="button" class="filter-btn active" data-filter="all">Avis clients</button>
+      <button type="button" class="filter-btn" data-filter="traditionnel">Traditionnel</button>
+      <button type="button" class="filter-btn" data-filter="moderne">Moderne</button>
+      <button type="button" class="filter-btn" data-filter="futuriste">Futuriste</button>
+    </div>
+
+    <section class="projects-section">
+      <div class="projects-grid" id="projects-grid">
+        <a href="realisation.html?id=1&avis=1" class="project-card reveal" data-category="moderne">
+          <img src="../assets/images/realisation-1-carte.png" alt="Table en travertin" loading="lazy" width="800" height="600">
+        </a>
+        <a href="realisation.html?id=2" class="project-card reveal" data-category="moderne">
+          <img src="../assets/images/home-projet-2.png" alt="Table à manger intérieure" loading="lazy" width="800" height="600">
+        </a>
+        <a href="realisation.html?id=3" class="project-card reveal" data-category="moderne">
+          <img src="../assets/images/home-projet-3.png" alt="Salle a manger avec table et chaises" loading="lazy" width="800" height="600">
+        </a>
+        <a href="realisation.html?id=4" class="project-card reveal" data-category="moderne">
+          <img src="../assets/images/home-projet-4.png" alt="Table ronde en pierre avec chaises" loading="lazy" width="800" height="600">
+        </a>
+        <a href="realisation.html?id=5" class="project-card reveal" data-category="traditionnel">
+          <img src="../assets/images/home-projet-5.png" alt="Table ronde en travertin avec assises claires" loading="lazy" width="800" height="600">
+        </a>
+        <a href="realisation.html?id=6" class="project-card reveal" data-category="traditionnel">
+          <img src="../assets/images/home-projet-6.png" alt="Console en pierre verte" loading="lazy" width="800" height="600">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <a href="../index.html" class="footer-link">Accueil</a>
+        <a href="realisations.html" class="footer-link">Réalisations</a>
+        <a href="a-propos.html" class="footer-link">À propos</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:contact@agence-assia.fr">contact@agence-assia.fr</a><br>
+        Paris, France
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/filters.js"></script>
+</body>
+</html>

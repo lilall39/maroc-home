@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche complète - Cadrage du besoin</title>
+  <style>
+    :root {
+      --a4-ratio: 210 / 297;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ecebe7;
+      padding: 1rem;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .sheet-a4 {
+      width: min(94vw, 900px);
+      aspect-ratio: var(--a4-ratio);
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .sheet-a4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet-a4" aria-label="Fiche complète au format A4">
+    <img src="../assets/images/fiche-cadrage-complete.png" alt="Fiche technique complète - Cadrage du besoin">
+  </main>
+</body>
+</html>

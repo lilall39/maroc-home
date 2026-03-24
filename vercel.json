@@ -4,8 +4,10 @@
   "framework": null,
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/projets", "destination": "/pages/projets.html" },
-    { "source": "/projet", "destination": "/pages/projet.html" },
+    { "source": "/projets", "destination": "/pages/realisations.html" },
+    { "source": "/projet", "destination": "/pages/realisation.html" },
+    { "source": "/realisations", "destination": "/pages/realisations.html" },
+    { "source": "/realisation", "destination": "/pages/realisation.html" },
     { "source": "/a-propos", "destination": "/pages/a-propos.html" },
     { "source": "/contact", "destination": "/pages/contact.html" }
   ]
