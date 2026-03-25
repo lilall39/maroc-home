@@ -305,7 +305,9 @@
 
 .what-we-do .philosophy-note {
   grid-column: 1 / -1;
-  margin-top: 4.5em;
+  margin-top: calc(
+    4.5em - var(--font-size-lg) * var(--line-height-relaxed)
+  );
   margin-bottom: 0;
   color: #A65D43;
   font-size: calc(var(--font-size-base) + 2pt);
@@ -342,7 +344,9 @@
   }
 
   .what-we-do .philosophy-note {
-    margin-top: 2.5em;
+    margin-top: calc(
+      2.5em - var(--font-size-lg) * var(--line-height-relaxed)
+    );
   }
 }
 
