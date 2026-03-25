@@ -108,10 +108,18 @@
   font-size: 0.85rem;
   cursor: pointer;
   backdrop-filter: blur(6px);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .project-card .avis-link:hover {
-  background: rgba(166, 93, 67, 1);
+  background: #ffffff;
+  color: #a65d43;
+  border-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .project-card[data-video-card] .project-thumb--video {
