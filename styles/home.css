@@ -349,6 +349,12 @@
 /* ---------- Section Projets (vignettes) ---------- */
 .home-projects {
   background: #E8D5C4;
+  padding-top: calc(
+    var(--section-padding-y) + var(--font-size-lg) * var(--line-height-relaxed)
+  );
+  padding-bottom: calc(
+    var(--section-padding-y) + var(--font-size-lg) * var(--line-height-relaxed)
+  );
 }
 
 .home-projects .section-title {
