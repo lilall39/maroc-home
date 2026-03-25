@@ -13,11 +13,53 @@
   ],
   "headers": [
     {
+      "source": "/styles/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "source": "/scripts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
+        }
+      ]
+    },
+    {
       "source": "/",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -26,16 +68,32 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
     {
-      "source": "/pages/:path*",
+      "source": "/pages/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -44,7 +102,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -53,7 +119,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -62,7 +136,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -71,7 +153,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -80,7 +170,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     },
@@ -89,7 +187,15 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "X-Content-Version",
+          "value": "7"
         }
       ]
     }
