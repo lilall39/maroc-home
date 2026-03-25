@@ -59,10 +59,10 @@
   if (hero && heroSlides.length) {
     var firstSlide = heroSlides[0];
     var currentSlideIndex = 0;
-    var heroDisplayMs = 3800;
-    var heroSlideTransitionMs = 1100;
-    var heroPostTransitionPauseMs = 700;
-    var heroIntroDelayMs = 1580;
+    var heroDisplayMs = 5200;
+    var heroSlideTransitionMs = 1650;
+    var heroPostTransitionPauseMs = 950;
+    var heroIntroDelayMs = 1750;
     var isSlideAnimating = false;
     var heroCarouselTimeoutId = null;
     var introTextSwitched = false;
