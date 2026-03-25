@@ -12,3 +12,6 @@
 .vercel
 .venv-analyze/
 node_modules/
+
+# Exports web (ne pas versionner)
+assets/videos/*_files/

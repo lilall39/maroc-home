@@ -1,3 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("PolarisSettingsActionLogoutUtils",["CAAWebAccessFlowVersionSingleton__UI_BASED","CometRelay","PolarisDismissEntry","PolarisRelayEnvironment","PolarisSettingsActionLogoutUtilsMutation.graphql"],(function(t,n,r,o,a,i,l){"use strict";var e;function s(t){o("PolarisDismissEntry").removeDismissEntry(o("PolarisDismissEntry").CAA_SPI_DIALOG_TYPE);var a=r("CAAWebAccessFlowVersionSingleton__UI_BASED").getAccessFlowVersion();o("CometRelay").commitMutation(r("PolarisRelayEnvironment"),{mutation:e!==void 0?e:e=n("PolarisSettingsActionLogoutUtilsMutation.graphql"),variables:{access_flow_version:a,userId:t}})}l.doFetaLogout=s}),98);
