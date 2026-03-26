@@ -15,7 +15,7 @@
       var category = card.getAttribute("data-category");
       var show;
       if (filter === "all") {
-        show = category === "avis";
+        show = category === "avis" || category === "traditionnel";
       } else {
         show = category === filter;
       }
