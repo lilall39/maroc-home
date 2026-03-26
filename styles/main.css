@@ -112,6 +112,13 @@ header#site-header.site-header.header-scrolled {
   gap: var(--space-xl);
 }
 
+@media (min-width: 769px) {
+  .site-header .nav-list li:last-child .nav-link {
+    display: inline-block;
+    margin-right: 0.4rem;
+  }
+}
+
 .site-header .nav-link {
   font-family: "Prata", serif;
   font-size: var(--font-size-sm);
