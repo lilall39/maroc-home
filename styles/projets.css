@@ -167,6 +167,7 @@
 
 .project-card.project-card--signature .card-content {
   opacity: 1;
+  padding-bottom: calc(var(--space-lg) - 1.25rem);
 }
 
 .project-card.project-card--signature .card-title {
