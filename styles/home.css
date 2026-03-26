@@ -539,6 +539,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .approach .section-title {
@@ -565,6 +566,39 @@
   gap: var(--space-xl);
   margin-top: calc(var(--space-xl) + 1em);
   margin-bottom: calc(var(--space-lg) + 1em);
+}
+
+#notre-concept {
+  scroll-margin-top: 6rem;
+}
+
+.approach .approach-concept-link {
+  position: absolute;
+  right: var(--section-padding-x);
+  bottom: var(--section-padding-x);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.25rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+
+.approach .approach-concept-link::after {
+  content: "→";
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.approach .approach-concept-link:hover {
+  color: #ffffff;
+  opacity: 0.98;
 }
 
 .approach-item h3 {
