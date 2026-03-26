@@ -50,7 +50,10 @@
   }
 
   /* Sur la page Réalisations, on reste sur place et on ouvre l'avis client */
-  var isRealisationsPage = /\/pages\/realisations\.html$/.test(window.location.pathname);
+  var isRealisationsPage =
+    /\/pages\/realisations\.html$/.test(window.location.pathname) ||
+    /\/realisations\/?$/.test(window.location.pathname) ||
+    /\/projets\/?$/.test(window.location.pathname);
   if (isRealisationsPage) {
     var avisItems = [
       {
