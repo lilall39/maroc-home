@@ -31,20 +31,6 @@
       if (!shouldShowVideo) {
         video.pause();
         video.currentTime = 0;
-        video.muted = true;
-        return;
-      }
-
-      // Sur certains navigateurs (surtout en prod), l’autoplay ne démarre pas tout de suite
-      // quand on affiche un <video> après un display:none. On force le play.
-      video.muted = true;
-      video.playsInline = true;
-      try {
-        video.load();
-      } catch (e) {}
-      var playPromise = video.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(function () {});
       }
     });
   }
