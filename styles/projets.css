@@ -151,12 +151,12 @@
 
 .projects-grid .project-card:hover,
 .projects-grid .project-card:focus-within {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .projects-grid .project-card:hover img,
 .projects-grid .project-card:focus-within img {
-  transform: translateZ(0) scale(1.42);
+  transform: translateZ(0) scale(1.8) translate3d(-8%, -6%, 0);
 }
 
 .project-card .card-content {
