@@ -259,8 +259,8 @@
       });
     });
 
-    zoomModal.addEventListener("click", function (event) {
-      if (event.target === zoomModal) closeZoom();
+    zoomModal.addEventListener("click", function () {
+      closeZoom();
     });
 
     document.addEventListener("keydown", function (event) {
