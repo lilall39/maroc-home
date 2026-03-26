@@ -232,6 +232,41 @@
       if (event.key === "Escape") closeAvisModal();
     });
 
+    /* Zoom au clic sur les cartes “Pièces signatures” */
+    var zoomModal = document.createElement("div");
+    zoomModal.className = "signature-zoom-modal";
+    zoomModal.setAttribute("aria-hidden", "true");
+    zoomModal.innerHTML =
+      '<img class="signature-zoom-image" alt="Agrandissement" width="1200" height="800">';
+    document.body.appendChild(zoomModal);
+    var zoomImage = zoomModal.querySelector(".signature-zoom-image");
+
+    function closeZoom() {
+      zoomModal.classList.remove("is-open");
+      zoomModal.setAttribute("aria-hidden", "true");
+      if (zoomImage) zoomImage.removeAttribute("src");
+    }
+
+    document.querySelectorAll(".project-card--signature").forEach(function (card) {
+      card.addEventListener("click", function (event) {
+        // Ne pas ouvrir si on clique sur un bouton (au cas où)
+        if (event.target && event.target.closest && event.target.closest("button")) return;
+        var img = card.querySelector("img");
+        if (!img || !zoomImage) return;
+        zoomImage.src = img.getAttribute("src") || "";
+        zoomModal.classList.add("is-open");
+        zoomModal.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    zoomModal.addEventListener("click", function (event) {
+      if (event.target === zoomModal) closeZoom();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeZoom();
+    });
+
     /* Deep-link : /pages/realisations.html?avis=0 ouvre directement l’avis */
     if (typeof URLSearchParams !== "undefined") {
       try {
