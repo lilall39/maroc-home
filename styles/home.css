@@ -454,38 +454,32 @@
 
 @keyframes homeKenBurnsA {
   0% {
-    transform: scale(1.03) translate3d(0, 0, 0);
+    transform: scale(1) translate3d(0, 0, 0);
   }
   100% {
-    transform: scale(1.09) translate3d(-1.2%, -1.1%, 0);
+    transform: scale(1.24) translate3d(0, 0, 0);
   }
 }
 
 @keyframes homeKenBurnsB {
   0% {
-    transform: scale(1.02) translate3d(0, 0, 0);
+    transform: scale(1) translate3d(0, 0, 0);
   }
   100% {
-    transform: scale(1.08) translate3d(1.1%, -0.9%, 0);
+    transform: scale(1.2) translate3d(0, 0, 0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .home-project-card img {
-    animation: homeKenBurnsA 18s ease-in-out infinite alternate;
-    will-change: transform;
-  }
-
-  .home-projects-grid .home-project-card:nth-child(even) img {
-    animation-name: homeKenBurnsB;
-  }
+.home-project-card img {
+  transform-origin: center center;
+  animation: homeKenBurnsA 14s ease-out infinite alternate;
+  will-change: transform;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-project-card img {
-    animation: none;
-  }
+.home-projects-grid .home-project-card:nth-child(even) img {
+  animation-name: homeKenBurnsB;
 }
+
 
 .home-project-card .card-overlay {
   position: absolute;
