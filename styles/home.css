@@ -433,7 +433,8 @@
 .home-projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-lg);
+  column-gap: var(--space-lg);
+  row-gap: calc(var(--space-lg) + 3rem);
   padding-top: calc(var(--font-size-lg) * var(--line-height-relaxed));
 }
 
