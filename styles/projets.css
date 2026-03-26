@@ -175,6 +175,10 @@
   font-weight: 650;
   line-height: 1.35;
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .project-card .card-title {
