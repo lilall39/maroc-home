@@ -231,6 +231,23 @@
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") closeAvisModal();
     });
+
+    /* Deep-link : /pages/realisations.html?avis=0 ouvre directement l’avis */
+    if (typeof URLSearchParams !== "undefined") {
+      try {
+        var params = new URLSearchParams(window.location.search || "");
+        var avisParam = params.get("avis");
+        if (avisParam != null && avisParam !== "") {
+          var requestedIndex = Number(avisParam);
+          if (Number.isFinite(requestedIndex)) {
+            applyFilter("all");
+            renderAvis(requestedIndex);
+            avisModal.classList.add("is-open");
+            avisModal.setAttribute("aria-hidden", "false");
+          }
+        }
+      } catch (e) {}
+    }
   }
 
   filterBtns.forEach(function (btn) {

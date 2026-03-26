@@ -207,6 +207,18 @@
     }
   }
 
+  /* ---------- Accueil : flèche vers un avis client ---------- */
+  document.querySelectorAll(".js-home-project-card[data-avis-target]").forEach(function (card) {
+    var arrow = card.querySelector(".home-project-avis-arrow");
+    if (!arrow) return;
+    arrow.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      var target = card.getAttribute("data-avis-target");
+      window.location.href = "pages/realisations.html?avis=" + encodeURIComponent(target);
+    });
+  });
+
   /* ---------- Révélation au scroll (fade-in) ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if (reveals.length && "IntersectionObserver" in window) {

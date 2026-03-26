@@ -467,6 +467,33 @@
   transition: opacity var(--transition-base);
 }
 
+.home-project-card .home-project-avis-arrow {
+  position: absolute;
+  right: var(--space-lg);
+  bottom: var(--space-lg);
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base),
+    opacity var(--transition-base);
+}
+
+.home-project-card:hover .home-project-avis-arrow {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0a0a0a;
+  transform: translateX(2px);
+}
+
 .home-project-card .card-title {
   font-size: var(--font-size-xl);
   font-weight: 700;
