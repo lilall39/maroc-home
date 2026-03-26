@@ -39,7 +39,7 @@
 .about-block h2 {
   font-size: var(--font-size-xl);
   font-weight: 500;
-  color: var(--color-black);
+  color: #A65D43;
   margin-bottom: var(--space-md);
   letter-spacing: var(--letter-spacing-tight);
 }
