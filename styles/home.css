@@ -469,8 +469,8 @@
 
 .home-project-card .home-project-avis-arrow {
   position: absolute;
-  right: var(--space-lg);
-  bottom: var(--space-lg);
+  right: 1rem;
+  bottom: 1rem;
   width: 2.15rem;
   height: 2.15rem;
   border-radius: 999px;
@@ -486,6 +486,10 @@
     background-color var(--transition-base),
     transform var(--transition-base),
     opacity var(--transition-base);
+}
+
+.home-project-card .card-title {
+  padding-right: 3rem;
 }
 
 .home-project-card:hover .home-project-avis-arrow {
