@@ -16,6 +16,7 @@
 
 .page-header .page-subtitle {
   font-size: var(--font-size-base);
+  font-weight: 700;
   color: #A65D43;
 }
 
