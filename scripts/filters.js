@@ -28,9 +28,12 @@
       videoCard.classList.toggle("show-video", shouldShowVideo);
       var video = videoCard.querySelector("video");
       if (!video) return;
-      if (!shouldShowVideo) {
-        video.pause();
-        video.currentTime = 0;
+      video.pause();
+      video.currentTime = 0;
+      if (shouldShowVideo) {
+        try {
+          video.load();
+        } catch (e) {}
       }
     });
   }
