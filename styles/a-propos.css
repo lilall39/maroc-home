@@ -80,13 +80,26 @@
   pointer-events: none;
 }
 
+.about-visual-inner {
+  max-width: min(78ch, 100%);
+}
+
+.about-visual-title {
+  margin: 0 0 0.35rem 0;
+  color: rgba(255, 255, 255, 0.98);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+}
+
 .about-visual-caption {
   margin: 0;
-  max-width: 62ch;
   color: rgba(255, 255, 255, 0.96);
   font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.35;
+  font-weight: 650;
+  line-height: 1.4;
   letter-spacing: 0.02em;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
 }
