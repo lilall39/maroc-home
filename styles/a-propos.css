@@ -57,8 +57,8 @@
 /* Image de séparation optionnelle */
 .about-visual {
   max-width: var(--max-width-content);
-  margin: 0 auto var(--space-3xl);
-  aspect-ratio: 21/9;
+  margin: -0.75rem auto calc(var(--space-3xl) - 0.75rem);
+  aspect-ratio: 2.05/1;
   overflow: hidden;
   background: var(--color-gray-200);
   position: relative;
