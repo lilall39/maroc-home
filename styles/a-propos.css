@@ -55,6 +55,10 @@
   margin-top: var(--space-md);
 }
 
+.about-block .partner-name {
+  color: #A65D43;
+}
+
 /* Image de séparation optionnelle */
 .about-visual {
   max-width: var(--max-width-content);
