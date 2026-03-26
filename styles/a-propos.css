@@ -90,6 +90,35 @@
   text-align: center;
 }
 
+.about-contact-link {
+  position: absolute;
+  right: var(--section-padding-x);
+  bottom: var(--section-padding-x);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.25rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+
+.about-contact-link::after {
+  content: "→";
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.about-contact-link:hover {
+  color: #ffffff;
+  opacity: 0.98;
+}
+
 .about-visual-inner {
   max-width: min(var(--max-width-narrow), 100%);
   margin: 0 auto;
