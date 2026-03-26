@@ -464,7 +464,7 @@
 
 .home-project-card:hover img,
 .home-project-card:focus-within img {
-  transform: translateZ(0) scale(1.34);
+  transform: translateZ(0) scale(1.5);
 }
 
 .home-project-card .card-overlay {
