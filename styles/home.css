@@ -472,7 +472,7 @@
 
 .home-project-card img {
   transform-origin: center center;
-  animation: homeKenBurnsA 14s ease-out infinite alternate;
+  animation: homeKenBurnsA 10s ease-out infinite alternate;
   will-change: transform;
 }
 
