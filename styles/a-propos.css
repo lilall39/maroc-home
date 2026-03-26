@@ -57,6 +57,11 @@
 
 .about-block .partner-name {
   color: #A65D43;
+  text-decoration: none;
+}
+
+.about-block .partner-name:hover {
+  text-decoration: underline;
 }
 
 /* Image de séparation optionnelle */
