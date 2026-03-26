@@ -449,10 +449,11 @@
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow);
+  will-change: transform;
 }
 
 .home-project-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.12);
 }
 
 .home-project-card .card-overlay {
@@ -500,40 +501,6 @@
 
 .home-project-card.js-home-project-card {
   cursor: zoom-in;
-}
-
-/* Zoom (accueil) */
-.home-zoom-modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background: rgba(10, 10, 10, 0.88);
-  z-index: 2500;
-  padding: var(--space-md);
-}
-
-.home-zoom-modal.is-open {
-  display: flex;
-}
-
-.home-zoom-image {
-  width: min(92vw, 1080px);
-  max-height: 88vh;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.45);
-  transform: scale(0.92);
-  opacity: 0;
-  transition: transform 260ms ease, opacity 260ms ease;
-}
-
-.home-zoom-modal.is-open .home-zoom-image {
-  transform: scale(1);
-  opacity: 1;
 }
 
 .home-project-card .card-title {

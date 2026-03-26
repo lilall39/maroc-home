@@ -207,56 +207,25 @@
     }
   }
 
-  /* ---------- Accueil : flèche vers un avis client ---------- */
-  (function () {
-    var cards = document.querySelectorAll(".js-home-project-card[data-avis-target]");
-    if (!cards.length) return;
-
-    var zoomModal = document.createElement("div");
-    zoomModal.className = "home-zoom-modal";
-    zoomModal.setAttribute("aria-hidden", "true");
-    zoomModal.innerHTML = '<img class="home-zoom-image" alt="Agrandissement" width="1200" height="800">';
-    document.body.appendChild(zoomModal);
-    var zoomImage = zoomModal.querySelector(".home-zoom-image");
-
-    function closeZoom() {
-      zoomModal.classList.remove("is-open");
-      zoomModal.setAttribute("aria-hidden", "true");
-      if (zoomImage) zoomImage.removeAttribute("src");
+  /* ---------- Accueil : flèche vers un avis client + pas de redirection sur la carte ---------- */
+  document.querySelectorAll(".js-home-project-card[data-avis-target]").forEach(function (card) {
+    var arrow = card.querySelector(".home-project-avis-arrow");
+    if (arrow) {
+      arrow.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var target = card.getAttribute("data-avis-target");
+        window.location.href = "pages/realisations.html?avis=" + encodeURIComponent(target);
+      });
     }
 
-    cards.forEach(function (card) {
-      var arrow = card.querySelector(".home-project-avis-arrow");
-      if (arrow) {
-        arrow.addEventListener("click", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-          var target = card.getAttribute("data-avis-target");
-          window.location.href = "pages/realisations.html?avis=" + encodeURIComponent(target);
-        });
+    card.addEventListener("click", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".home-project-avis-arrow")) {
+        return;
       }
-
-      card.addEventListener("click", function (event) {
-        if (event.target && event.target.closest && event.target.closest(".home-project-avis-arrow")) {
-          return;
-        }
-        event.preventDefault();
-        var img = card.querySelector("img");
-        if (!img || !zoomImage) return;
-        zoomImage.src = img.getAttribute("src") || "";
-        zoomModal.classList.add("is-open");
-        zoomModal.setAttribute("aria-hidden", "false");
-      });
+      event.preventDefault();
     });
-
-    zoomModal.addEventListener("click", function () {
-      closeZoom();
-    });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeZoom();
-    });
-  })();
+  });
 
   /* ---------- Révélation au scroll (fade-in) ---------- */
   var reveals = document.querySelectorAll(".reveal");
