@@ -291,6 +291,10 @@
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var filter = btn.getAttribute("data-filter");
+      if (filter === "futuriste") {
+        window.location.href = "a-propos.html";
+        return;
+      }
       applyFilter(filter);
     });
   });
