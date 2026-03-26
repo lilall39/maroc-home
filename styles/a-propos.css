@@ -75,13 +75,16 @@
   inset: 0;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   padding: var(--space-xl);
   background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 60%);
   pointer-events: none;
+  text-align: center;
 }
 
 .about-visual-inner {
   max-width: min(78ch, 100%);
+  margin: 0 auto;
 }
 
 .about-visual-title {
