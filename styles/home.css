@@ -470,14 +470,11 @@
   }
 }
 
-.home-project-card img {
+.home-projects-grid .home-project-card img {
   transform-origin: center center;
   animation: homeKenBurnsA 10s ease-out infinite alternate;
+  animation-delay: 0s;
   will-change: transform;
-}
-
-.home-projects-grid .home-project-card:nth-child(even) img {
-  animation-name: homeKenBurnsB;
 }
 
 
