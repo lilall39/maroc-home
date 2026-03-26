@@ -60,7 +60,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: var(--space-lg);
-  row-gap: calc(var(--space-lg) + 3rem);
+  row-gap: calc(var(--space-lg) + 6rem);
 }
 
 @media (min-width: 900px) {
