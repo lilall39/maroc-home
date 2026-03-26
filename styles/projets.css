@@ -165,6 +165,10 @@
   opacity: 1;
 }
 
+.project-card.project-card--signature .card-content {
+  opacity: 1;
+}
+
 .project-card .card-title {
   font-size: var(--font-size-lg);
   font-weight: 700;
