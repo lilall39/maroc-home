@@ -306,6 +306,10 @@
     gap: 0.6rem;
   }
 
+  .contact-header .page-title-with-link-catalogue {
+    margin-top: 0.6rem;
+  }
+
   .contact-header .page-title-catalogue {
     margin-left: 0;
     text-align: left;
