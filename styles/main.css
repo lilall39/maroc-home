@@ -115,7 +115,7 @@ header#site-header.site-header.header-scrolled {
 @media (min-width: 769px) {
   .site-header .nav-list li:last-child .nav-link {
     display: inline-block;
-    margin-right: 0.4rem;
+    margin-right: 0.9rem;
   }
 }
 
