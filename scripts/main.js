@@ -66,6 +66,7 @@
     var isSlideAnimating = false;
     var heroCarouselTimeoutId = null;
     var introTextSwitched = false;
+    var carouselStarted = false;
 
     function revealHeroImage() {
       window.setTimeout(function () {
@@ -83,6 +84,12 @@
           }
           introTextSwitched = true;
           syncTagline(currentSlideIndex);
+          if (!carouselStarted && heroSlides.length > 1) {
+            carouselStarted = true;
+            // Démarre le carrousel à partir de la 1re image visible :
+            // elle garde la même durée de lecture que les suivantes.
+            scheduleNextSlide(heroDisplayMs);
+          }
         }
 
         function onFirstSlideTransitionEnd(event) {
@@ -202,9 +209,7 @@
       firstSlide.addEventListener("error", revealHeroImage, { once: true });
     }
 
-    if (heroSlides.length > 1) {
-      scheduleNextSlide(heroDisplayMs);
-    }
+    // Le carrousel démarre après la fin de l'intro (voir switchFromIntroToFirstSlideText).
   }
 
   /* ---------- Accueil : flèche vers la même image sur Réalisations ---------- */
