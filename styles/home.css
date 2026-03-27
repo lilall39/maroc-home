@@ -687,6 +687,15 @@
 }
 
 @media (max-width: 768px) {
+  .approach .section-title {
+    white-space: normal;
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    font-size: clamp(1.1rem, 5.2vw, 1.45rem);
+    line-height: 1.3;
+  }
+
   .home-projects-grid {
     grid-template-columns: 1fr;
     column-gap: var(--space-md);
