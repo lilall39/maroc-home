@@ -72,6 +72,22 @@
 @media (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    row-gap: var(--space-lg);
+    column-gap: var(--space-md);
+  }
+
+  .projects-section {
+    padding: calc(var(--space-xl) + 2rem) var(--section-padding-x) calc(var(--space-2xl) + 1.5rem);
+  }
+
+  .filters {
+    padding-bottom: var(--space-lg);
+  }
+
+  .filters .filter-btn {
+    padding: 0.48rem 0.56rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
   }
 }
 

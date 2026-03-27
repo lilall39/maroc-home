@@ -153,3 +153,55 @@
   letter-spacing: var(--letter-spacing-wide);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: calc(var(--header-height) + var(--space-xl)) var(--section-padding-x) var(--space-xl);
+  }
+
+  .about-hero .page-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .about-hero .page-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .about-visual {
+    margin: 0 auto var(--space-2xl);
+    aspect-ratio: 1.45/1;
+  }
+
+  .about-visual-overlay {
+    padding: var(--space-md);
+  }
+
+  .about-visual-title {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+  }
+
+  .about-visual-caption {
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-sm);
+    letter-spacing: normal;
+  }
+
+  .about-contact-link {
+    right: var(--space-md);
+    bottom: var(--space-md);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+  }
+
+  .about-blocks {
+    padding: var(--space-xl) var(--section-padding-x) calc(var(--space-2xl) + (2 * 1em * var(--line-height-normal)));
+  }
+
+  .about-block {
+    margin: 0 auto var(--space-2xl);
+  }
+
+  .about-block h2 {
+    font-size: var(--font-size-lg);
+  }
+}

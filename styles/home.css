@@ -687,6 +687,21 @@
 }
 
 @media (max-width: 768px) {
+  .home-projects-grid {
+    grid-template-columns: 1fr;
+    column-gap: var(--space-md);
+    row-gap: calc(var(--space-lg) + 1rem);
+  }
+
+  .home-project-card .card-overlay {
+    padding: var(--space-md);
+  }
+
+  .home-project-card .home-project-avis-arrow {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+
   .approach-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);

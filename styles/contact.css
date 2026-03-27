@@ -194,23 +194,6 @@
 }
 
 @media (max-width: 560px) {
-  .contact-header .contact-header-titles {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    gap: var(--space-xs);
-  }
-
-  .contact-header .page-title-catalogue {
-    position: static;
-    transform: none;
-  }
-
-  .contact-header .page-title-with-link {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
   .contact-map-cta {
     flex-direction: column;
     align-items: stretch;
@@ -299,7 +282,91 @@
 }
 
 @media (max-width: 768px) {
+  .contact-header {
+    padding: calc(var(--header-height) + var(--space-xl)) var(--section-padding-x) var(--space-xl);
+  }
+
+  .contact-header .contact-header-titles {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    row-gap: var(--space-sm);
+    column-gap: 0;
+  }
+
+  .contact-header .page-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .contact-header .page-title-with-link,
+  .contact-header .page-title-with-link-catalogue {
+    width: 100%;
+    justify-content: flex-start;
+    justify-self: start;
+    gap: 0.6rem;
+  }
+
+  .contact-header .page-title-catalogue {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .contact-mini-map-link,
+  .contact-mini-catalogue-link {
+    position: static;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    min-width: 86px;
+  }
+
+  .contact-header .contact-subtitles {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-lg);
+    column-gap: 0;
+    margin-top: var(--space-md);
+  }
+
+  .contact-header .page-subtitle,
+  .contact-header .contact-subtitle-detail,
+  .contact-header .page-subtitle-catalogue {
+    text-align: left;
+  }
+
+  .contact-section {
+    padding: var(--space-lg) var(--section-padding-x) var(--space-2xl);
+  }
+
+  .contact-form label {
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.95rem 1rem;
+  }
+
   .contact-form .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-header .contact-header-titles {
+    row-gap: var(--space-xs);
+  }
+
+  .contact-header .page-title-with-link,
+  .contact-header .page-title-with-link-catalogue {
+    align-items: center;
+    justify-content: flex-start;
   }
 }
