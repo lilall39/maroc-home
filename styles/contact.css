@@ -39,7 +39,7 @@
 
 .contact-mini-map-link {
   position: absolute;
-  right: 0;
+  left: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
