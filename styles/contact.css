@@ -287,11 +287,11 @@
   }
 
   .contact-header .contact-header-titles {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     min-height: auto;
-    row-gap: var(--space-sm);
-    column-gap: 0;
+    gap: var(--space-sm);
   }
 
   .contact-header .page-title {
@@ -307,6 +307,7 @@
   }
 
   .contact-header .page-title-with-link-catalogue {
+    order: 2;
     margin-top: 0.6rem;
   }
 
