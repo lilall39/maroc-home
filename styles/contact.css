@@ -4,7 +4,7 @@
 
 .contact-header {
   padding: calc(var(--header-height) + var(--space-3xl)) var(--section-padding-x) var(--space-2xl);
-  text-align: right;
+  text-align: left;
 }
 
 .contact-header .page-title {
@@ -18,7 +18,7 @@
   font-size: var(--font-size-base);
   color: var(--color-gray-500);
   max-width: 620px;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .contact-links-row {
