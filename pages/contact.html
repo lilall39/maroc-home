@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/variables.css?v=8">
-  <link rel="stylesheet" href="../styles/reset.css?v=8">
-  <link rel="stylesheet" href="../styles/main.css?v=8">
-  <link rel="stylesheet" href="../styles/contact.css?v=8">
+  <link rel="stylesheet" href="../styles/variables.css?v=99">
+  <link rel="stylesheet" href="../styles/reset.css?v=99">
+  <link rel="stylesheet" href="../styles/main.css?v=99">
+  <link rel="stylesheet" href="../styles/contact.css?v=99">
 </head>
 <body class="page">
   <header class="site-header header-transparent" id="site-header">
@@ -36,17 +36,19 @@
 
   <main class="main">
     <header class="contact-header">
-      <h1 class="page-title">Contact</h1>
-      <p class="page-subtitle">Parlez-nous de votre projet. Nous vous recontactons sous 48 h.</p>
-      <div class="contact-links-row reveal">
-        <div class="contact-map-cta">
-          <span class="contact-map-label">Nous trouver</span>
-          <a class="contact-map-link" href="https://www.google.com/maps/place/Moroccan+home+signature/@31.6868893,-12.4803543,5.98z/data=!4m6!3m5!1s0xdafefe6edbeabc3:0xe181da9c02ee8847!8m2!3d31.6805878!4d-7.7489812!16s%2Fg%2F11xtxwhqcc?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D">Maps</a>
+      <div class="contact-header-titles">
+        <div class="page-title-with-link">
+          <h1 class="page-title">Contact</h1>
+          <a class="contact-mini-map-link" href="https://www.google.com/maps/place/Moroccan+home+signature/@31.6868893,-12.4803543,5.98z/data=!4m6!3m5!1s0xdafefe6edbeabc3:0xe181da9c02ee8847!8m2!3d31.6805878!4d-7.7489812!16s%2Fg%2F11xtxwhqcc?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D">Maps</a>
         </div>
-        <div class="contact-map-cta contact-map-cta--placeholder" aria-hidden="true">
-          <span class="contact-map-label">Voir notre catalogue</span>
-          <span class="contact-map-link">À venir</span>
+        <div class="page-title-with-link page-title-with-link-catalogue">
+          <h2 class="page-title page-title-catalogue">Catalogue</h2>
+          <a class="contact-mini-map-link contact-mini-catalogue-link" href="https://marochome-production.up.railway.app/catalogue" target="_blank" rel="noopener noreferrer">Catalogue</a>
         </div>
+      </div>
+      <div class="contact-subtitles">
+        <p class="page-subtitle page-subtitle-contact"><span class="contact-subtitle-detail">Qu’il s’agisse d’un projet déjà défini ou d’une intention encore à préciser, nous étudions chaque demande avec attention afin d’en évaluer la faisabilité et d’envisager, si nécessaire, les ajustements les plus adaptés.</span></p>
+        <p class="page-subtitle page-subtitle-catalogue">Découvrez notre catalogue et plongez dans un univers de meubles, de matières et d’espaces imaginés avec passion, exigence et sens du détail, proposés à des conditions particulièrement attractives.</p>
       </div>
     </header>
 
@@ -55,7 +57,7 @@
         <form class="contact-form reveal" id="contact-form" action="#" method="post">
           <div class="form-grid">
             <div class="form-group">
-              <label for="name">Nom / société</label>
+              <label for="name">Nom / ou société</label>
               <input type="text" id="name" name="name" required placeholder="Votre nom ou celui de votre entreprise">
             </div>
             <div class="form-group">
@@ -119,7 +121,7 @@
     </div>
   </footer>
 
-  <script src="../scripts/main.js?v=8"></script>
-  <script src="../scripts/contact.js?v=8"></script>
+  <script src="../scripts/main.js?v=99"></script>
+  <script src="../scripts/contact.js?v=99"></script>
 </body>
 </html>

@@ -24,7 +24,7 @@
 
 /* ---------- Blocs de contenu ---------- */
 .about-blocks {
-  padding: var(--space-2xl) var(--section-padding-x) var(--space-3xl);
+  padding: var(--space-2xl) var(--section-padding-x) calc(var(--space-3xl) + (2 * 1em * var(--line-height-normal)));
 }
 
 .about-block {
