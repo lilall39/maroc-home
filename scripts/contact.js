@@ -11,7 +11,7 @@
     var name = form.querySelector("#name").value;
     var email = form.querySelector("#email").value;
     var message = form.querySelector("#message").value;
-    if (!name || !email || !message) return;
+    if (!name || !email) return;
     alert("Merci pour votre message, " + name + ". Nous vous recontactons très rapidement.");
     form.reset();
   });
