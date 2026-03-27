@@ -19,9 +19,16 @@
   color: var(--color-gray-500);
 }
 
-.contact-map-cta {
-  max-width: 460px;
+.contact-links-row {
+  max-width: min(980px, 100%);
   margin: var(--space-xl) auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.contact-map-cta {
+  width: 100%;
   padding-top: var(--space-md);
   border-top: 1px solid rgba(166, 93, 67, 0.45);
   display: flex;
@@ -61,6 +68,19 @@
 .contact-map-link:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 22px rgba(20, 21, 26, 0.2);
+}
+
+.contact-map-cta--placeholder .contact-map-link {
+  background: transparent;
+  color: #A65D43;
+  border: 1px solid rgba(166, 93, 67, 0.45);
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .contact-links-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
