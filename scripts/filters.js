@@ -259,10 +259,27 @@
       if (event.key === "Escape") closeZoom();
     });
 
-    /* Deep-link : /pages/realisations.html?avis=0 ouvre directement l’avis */
+    /* Deep-links :
+       - /pages/realisations.html?focus=0 => affiche et cible la même carte image
+       - /pages/realisations.html?avis=0  => ouvre directement l’avis
+    */
     if (typeof URLSearchParams !== "undefined") {
       try {
         var params = new URLSearchParams(window.location.search || "");
+        var focusParam = params.get("focus");
+        if (focusParam != null && focusParam !== "") {
+          var focusIndex = Number(focusParam);
+          if (Number.isFinite(focusIndex)) {
+            applyFilter("all");
+            var focusCard = avisCards[focusIndex];
+            if (focusCard && typeof focusCard.scrollIntoView === "function") {
+              window.setTimeout(function () {
+                focusCard.scrollIntoView({ behavior: "smooth", block: "center" });
+              }, 60);
+            }
+          }
+        }
+
         var avisParam = params.get("avis");
         if (avisParam != null && avisParam !== "") {
           var requestedIndex = Number(avisParam);
